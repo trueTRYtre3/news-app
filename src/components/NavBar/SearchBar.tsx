@@ -9,13 +9,14 @@ const SearchBar = () => {
     }
 
     return (
-        <div>Topic: <form onSubmit={(event) => submitForm(event)}>
+        <div>
+            <form onSubmit={(event) => submitForm(event)}>
                 <input 
                     type="text" 
                     value={topic} 
                     onChange={(event) => changeTopic(event?.target.value)} 
                 />
-                <button type="submit">Submit</button>
+                <button type="submit">Search</button>
             </form>
         </div>
     )

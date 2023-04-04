@@ -1,12 +1,12 @@
 import React from 'react';
 import './App.css';
-import SearchBar from './components/SearchBar';
+import SearchBar from './components/NavBar/SearchBar';
+import NavBar from './components/NavBar/NavBar';
 
 function App() {
   return (
     <div className="App">
-      <strong>News Compiler to compile news!!!</strong>
-      <SearchBar />
+      <NavBar />
     </div>
   );
 }
